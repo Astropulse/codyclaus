@@ -1,2 +1,0 @@
-# codyclaus
-Portfolio Website
