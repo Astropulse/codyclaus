@@ -1,0 +1,107 @@
+/* Table of Contents
+-------------------------------
+- General Content
+- Typography
+- Header & Nav
+- Images & Media
+- Footer
+- Media Queries
+-------------------------------*/
+
+/* General Content
+-------------------------------*/
+.main{padding-top: 3%;}
+.row{padding: 2% 0;}
+.grey{background-color:#4c5563;}
+.darkgrey{background-color:#2d333c; margin-bottom: 3%; margin-top: 4%;}
+
+/* Typography
+-------------------------------*/
+body{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.5em;
+    color: #fafdff;
+
+}
+h2{
+    font-family: 'Press Start 2P', monospace;
+    font-size: 2em;
+}
+h2.bio{
+    color:#ffd100; 
+    text-align: center; 
+    margin-top: 3%;
+}
+h5.label{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.5em;
+    margin: 0% 0%;
+    text-align: center;
+    color: #fafdff;
+}
+p.bio{
+    float: left;
+    color: #fafdff;}
+
+/* Header & Nav
+-------------------------------*/
+header.main_nav{
+    display: block;
+}
+
+/* Images & Media
+-------------------------------*/
+img{max-width: 100%;}
+img.avatar{
+    display: flex;
+    align-items: bottom;
+    max-width: 100%;
+    margin: 8% auto;
+}
+img.portfolio:hover{
+    outline: 2px solid #007899;
+    outline-offset: -2px;
+}
+
+/* Footer
+-------------------------------*/
+ul.social{
+	display: block;
+	margin: 4% 0;
+	list-style-type: none;
+	text-align: center;
+}
+ul.social li{
+	font-size: 3em;
+	display: inline;
+	padding: 0 2%;
+}
+ul.social li a{
+	color: #4c5563;
+}
+ul.social li a:hover{color: #007899;}
+
+p.copywright{
+    text-align: center;
+    color: #4c5563;
+    font-size: 1em;
+}
+
+/* Media Queries
+-------------------------------*/
+
+/* Larger than mobile */
+@media (max-width: 549px) {
+    img.avatar{max-width: 50%; margin-top: 5%}
+}
+@media (max-width: 1000px) {
+    h2.bio{font-size: 1.5em;}
+}
+@media (max-width: 479px) {
+    .logo a{font-size: 1.75em;}
+    .main{padding-top: 15%;}
+    .portfolio{margin-bottom: 3%;}
+    img.avatar{max-width: 30%; margin-top: 5%}
+    h2.bio{font-size: 1.8em;}
+    ul.social li a{font-size: 0.75em;}
+}
